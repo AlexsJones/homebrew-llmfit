@@ -7,20 +7,20 @@ class Llmfit < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/AlexsJones/llmfit/releases/download/v#{version}/llmfit-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "d491cf3c341d166d93aa9bb1143e243c012cbde11cd9f65a93eacb41c8b168b5"
+      sha256 "658d1e519fca8257e55759e7325d47b8db6adc883c52d2289bd77a43539f08fe"
     else
       url "https://github.com/AlexsJones/llmfit/releases/download/v#{version}/llmfit-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "9637e4597b257a592b6f45b0c1c18e885fe29da9d078fdb6955e8f29144e7d9f"
+      sha256 "191b5e4e9e08a3bd2c0cfcd72fe31d74edc25bb2ace59b672e2101c4f9b60420"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/AlexsJones/llmfit/releases/download/v#{version}/llmfit-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "be9bf07eab9684bde415a478ee85f79afc82fc249c19387cad8d3b8e3a6ac360"
+      sha256 "024aa82c4bf38a16ffe39e3bcf167e55765bfa2c5b722475c9ec78a68fafdcc2"
     else
       url "https://github.com/AlexsJones/llmfit/releases/download/v#{version}/llmfit-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "b63c14072c7a20ad7b2678bcbb4c62a883f6d810d2ebf2fbfe9ed2f2dbdd6c34"
+      sha256 "c2b1df1082d92ebcaa65fa308db93986dc14ce696c073c9517863ebfcce3a94c"
     end
   end
 
