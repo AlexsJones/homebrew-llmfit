@@ -1,26 +1,26 @@
 class Llmfit < Formula
   desc "Terminal tool that right-sizes LLM models to your system hardware"
   homepage "https://github.com/AlexsJones/llmfit"
-  version "1.1.4"
+  version "1.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/AlexsJones/llmfit/releases/download/v#{version}/llmfit-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "6efef2fe91b67830f50f6a601d28c9bf5cd3f4bf9d0635d38889f95b287af7ab"
+      sha256 "49537fb3e0c92766f5854c0482a50f8974f23b22c466b4c860873d1c6963fb34"
     else
       url "https://github.com/AlexsJones/llmfit/releases/download/v#{version}/llmfit-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "c4991576184dd293a31d3d9dee14e5e0956328feefe12fd8667d36e13073f2cb"
+      sha256 "a06a1a7a60d71e47092aab36f14f59440a5a7c366db23fd7bdeb4e1f8384e9d0"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/AlexsJones/llmfit/releases/download/v#{version}/llmfit-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "d608c26956a20f83b1b681bb29c4fe28dc0922c03520c15010f931b141b6871b"
+      sha256 "1d421b38884e40a1721315c0c2065ffe0dae527e366ea273ef171cc18bdf8b61"
     else
       url "https://github.com/AlexsJones/llmfit/releases/download/v#{version}/llmfit-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "7573762da09e883e5141b4ebf4ddedc2ae34f156963ea011fe7af784184f8b1d"
+      sha256 "289ec5459a316e18ceba0480e8842d1a5b1e33500cfa16d7889cb1975a0fe280"
     end
   end
 
